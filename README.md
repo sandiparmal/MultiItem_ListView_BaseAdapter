@@ -6,7 +6,6 @@ MultiItem ListView with BaseAdapter
 First, in mainActivity we will create two array like
 
      private String[] Names = {"Sandeep Armal","Arun Choudhari", "Pradeep Chavan","Shrikant Pathe","Sarang Takone","Abhiraj Nagtode"};
-      
      private String[] Profession = {"Android Developer","Network Adminstartor", "Database Adminstrative","Customer Support","BMC Tool Manager","WildLife Photographer"};
 	
 	first array have name nad second array having  profession.  
@@ -25,7 +24,8 @@ DynamicLisAdapter.java
 
 first,we are extending BaseAdapter to this activity.  
 
-** what base adapter do? ** 
+     ** what base adapter do? **   
+
 Adapter is use to bind data to view. it will bind your all data to view or you can say listview.  
 BaseAdapter is simple abstract class for your Adapter interface to implementing adapters. we can create our own but android system provide some flexible already... 
 
@@ -47,9 +47,9 @@ we create on constructor for adapter class(offcourse we are passing some value t
 		this.context = context;
 		layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-	 }
-	
-	/** When you use a custom view in a ListView you must define the row layout for this we needd to use LayoutInflater*/
+	 }  
+	   
+            /** When you use a custom view in a ListView you must define the row layout for this we needd to use LayoutInflater*/
 	
 As we discuss we are going to overrid getView() method which return view.
 
